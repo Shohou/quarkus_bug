@@ -26,8 +26,8 @@ ENV JAVA_OPTIONS="-Djava.util.logging.manager=org.jboss.logmanager.LogManager -X
     JAVA_MAX_MEM_RATIO=75 \
     JAVA_INIT_MEM_RATIO=75
 
-COPY build/lib/* ${BASE_DIR}/lib/
-COPY build/*-runner.jar ${BASE_DIR}/app.jar
+COPY target/lib/* ${BASE_DIR}/lib/
+COPY target/*-runner.jar ${BASE_DIR}/app.jar
 
 USER 1001
 
